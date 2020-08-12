@@ -1,0 +1,1 @@
+python src/main_all_words.py --inventory_name=csi --model_name=BertDense --data_dir=./data/ --data_out=./output/ --wsd_data_dir=./wsd_data/ --epochs=30
