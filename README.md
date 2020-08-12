@@ -23,15 +23,12 @@ For further information on this work, please visit our [website](https://Sapienz
 }
 ```
 
-<<<<<<< HEAD
 ## Note by Richard
 To train the model do:  
 1. download region descriptions from https://visualgenome.org/api/v0/api_home.html
 2. execute Vgenome_to_pkl.py using the Visual Genome region descriptions
 3. rename two hard-coded paths in src/training.py
 4. source train_command.txt (i.e. run the command in train_command.txt)
-=======
->>>>>>> 0cca707947edaff11912b4b3661ea121d2b49461
 
 ## How to
 Run the python scripts ```src/main_all_words.py```, ```src/main_one_out.py``` and ```src/main_few_shot.py``` to reproduce the experiments for the all-words, one-out and few-shot settings (Table 4 and 6 of the paper, respectively).
