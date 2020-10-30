@@ -1,34 +1,9 @@
-# CSI: A Coarse Sense Inventory for 85% WSD 
-
-                                CSI: A Coarse Inventory for 85% WSD
-                Caterina Lacerra, Michele Bevilacqua, Tommaso Pasini and Roberto Navigli    
-                                     Sapienza, University of Rome
-                                    Department of Computer Science
-                       {lacerra, bevilacqua, pasini, navigli} [at] di.uniroma1.it
+# Visual Word Sense Disambiguation 
    
-This repository contains the code to reproduce the experiments reported in [CSI: A Coarse Sense Inventory for 85% Word Sense Disambiguation](https://pasinit.github.io/papers/lacerra_etal_aaai2020.pdf), by Caterina Lacerra, Michele Bevilacqua, Tommaso Pasini and Roberto Navigli.
-For further information on this work, please visit our [website](https://SapienzaNLP.github.io/csi/).
+This repository contains the code for the lab course AI Lab Language and Vision 2020 at the University of Bonn by the participant Richard Palme.
+The code is heavily based on <https://github.com/SapienzaNLP/csi_code>
 
-
-
-```
-@inproceedings{lacerraetal:2020,
-  title={ {CSI}: A Coarse Sense Inventory for 85\% Word Sense Disambiguation},
-  author={Lacerra, Caterina and Bevilacqua, Michele and Pasini, Tommaso and Navigli, Roberto},
-  booktitle={Proceedings of the 34th Conference on Artificial Intelligence},
-  pages={8123--8130},
-  publisher={{AAAI} Press},
-  year={2020},
-  doi = {10.1609/aaai.v34i05.6324}
-}
-```
-
-## Note by Richard
-To train the model do:  
-1. download region descriptions from https://visualgenome.org/api/v0/api_home.html
-2. execute Vgenome_to_pkl.py using the Visual Genome region descriptions
-3. rename two hard-coded paths in src/training.py
-4. source train_command.txt (i.e. run the command in train_command.txt)
+The rest of this README is copied from <https://github.com/SapienzaNLP/csi_code>
 
 ## How to
 Run the python scripts ```src/main_all_words.py```, ```src/main_one_out.py``` and ```src/main_few_shot.py``` to reproduce the experiments for the all-words, one-out and few-shot settings (Table 4 and 6 of the paper, respectively).
@@ -90,9 +65,6 @@ The processed input files, instead, are computed both for the training and the t
 ```instance_id target_word gold_label target_sentence```
 
 Once again, the files are tab-separated.
-
-# Acknowledgements
-The authors gratefully acknowledge the support of the ERC Consolidator Grant MOUSSE No. 726487 under the European Union’s Horizon 2020 research and innovation programme.
 
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

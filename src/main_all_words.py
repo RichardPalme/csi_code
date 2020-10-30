@@ -68,4 +68,6 @@ if __name__ == '__main__':
         training.train_model(config, args.epochs)
 
     best_epoch = utils.pick_epoch(config.experiment_folder)
+    #best_epoch = 0
+    print("evaluating epoch {}".format(best_epoch))
     test.test(config, best_epoch)

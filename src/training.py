@@ -126,7 +126,7 @@ def train_model(config, epochs, batch_size=64, sentence_max_len=64, lr=1e-4):
             optimizer.step()
 
             # process a batch of Visual Genome data
-            num_warmup_epochs = 20
+            num_warmup_epochs = 0
             if epoch >= num_warmup_epochs:
                 # get a batch of data
                 if k + batch_size > len(train_x_vgenome):
